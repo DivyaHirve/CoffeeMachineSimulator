@@ -95,9 +95,9 @@ public class CoffeeMachineSimulator {
         System.out.println("Espresso sold: " + espressoCount);
         System.out.println("Latte sold: " + latteCount);
         System.out.println("Cappuccino sold: " + cappuccinoCount);
-        System.out.println("Total earnings: $" + espressoCount * espressoPrice + latteCount * lattePrice + cappuccinoCount * cappuccinoPrice);
-        System.out.println("Total water used: " + (espressoCount * Espresso.getEspressoWater() + latteCount * Latte.getLatteWater() + cappuccinoCount * Cappuccino.getCappuccinoWater()) + " ml");
-        System.out.println("Total milk used: " + (latteCount * Latte.getLatteMilk() + cappuccinoCount * Cappuccino.getCappuccinoMilk()) + " ml");
-        System.out.println("Total coffee beans used: " + (espressoCount * Espresso.getEspressoCoffeeBeans() + latteCount * Latte.getLatteCoffeeBeans() + cappuccinoCount * Cappuccino.getCappuccinoCoffeeBeans()) + " units");
+        System.out.println("Total earnings: $" + ((espressoCount * espressoPrice) + (latteCount * lattePrice) + (cappuccinoCount * cappuccinoPrice)));
+        System.out.println("Total water used: " + ((espressoCount * Espresso.getEspressoWater()) + (latteCount * Latte.getLatteWater()) + (cappuccinoCount * Cappuccino.getCappuccinoWater())) + " ml");
+        System.out.println("Total milk used: " + ((latteCount * Latte.getLatteMilk()) + (cappuccinoCount * Cappuccino.getCappuccinoMilk())) + " ml");
+        System.out.println("Total coffee beans used: " + ((espressoCount * Espresso.getEspressoCoffeeBeans()) + (latteCount * Latte.getLatteCoffeeBeans()) + (cappuccinoCount * Cappuccino.getCappuccinoCoffeeBeans())) + " units");
     }
 }
